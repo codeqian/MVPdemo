@@ -9,7 +9,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class GetRequestI {
+public class GetRequest {
     public static void request() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BaseConfig.ROOTURL) // 设置 网络请求 Url
