@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="def_height">50dp</dimen>
+
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="sp_12">12dp</dimen>
+    <dimen name="sp_14">14dp</dimen>
+    <dimen name="sp_16">16dp</dimen>
+
+    <!--线条-->
+    <dimen name="line_bg_height_lib">0.7dp</dimen>
+    <!-- 项目组建相隔高度 -->
+    <dimen name="app_margin_lib">8dp</dimen>
+    <dimen name="app_margin_double_lib">16dp</dimen>
+    <dimen name="title_height_lib">56dp</dimen>
+    <dimen name="radius_sharp_lib">5dp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入内容"
+            android:textColorHint="#FFCCCCCC"
+            android:textColor="@color/text_black"
+            android:gravity="top|left"
+            android:textSize="15dp"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@null"/>
+
+        <com.shouchuanghui.commonmodule.view.ImageSelectView
+            android:id="@+id/isv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

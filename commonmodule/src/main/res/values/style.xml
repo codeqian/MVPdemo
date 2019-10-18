@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="BaseLibTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- 标题栏颜色 -->
+        <item name="colorPrimary">@color/app_color</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/app_color</item>
+        <!-- 控件颜色 -->
+        <item name="colorAccent">@color/top_background_color</item>
+        <!--标题栏字体颜色-->
+        <!--<item name="android:textColorPrimary">@color/text_black</item>-->
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@color/background_color</item>
+
+        <!-- menu中字体的样式 -->
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="actionMenuTextColor">@color/text_orange</item>
+
+        <!-- -->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- App.Animation.Activity.SlidingBack --><!-- App.Animation.Activity -->
+        <!--<item name="android:windowAnimationStyle">@style/App.Animation.Activity</item>-->
+        <!-- apply the toolbar style -->
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
+        <!-- apply the navigation style -->
+        <item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationStyle</item>
+    </style>
+
+    <!-- toolbar样式 -->
+    <style name="ToolBarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="titleMargin">0dp</item>
+        <item name="maxButtonHeight">@dimen/toolbar_height</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">40dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <!-- toolbar中navigation菜单样式 -->
+    <style name="ToolbarNavigationStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <!-- 项目menu 样式 -->
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@color/text_orange</item>
+        <item name="android:textSize">@dimen/font_size_max</item>
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:paddingRight">5dp</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:background">@color/white</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <!-- 设置弹出菜单文字颜色 -->
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="App.Animation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+
+    <style name="BugtagsTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <declare-styleable name="CustomerRecyclerView">
+        <attr name="refresh_enable" format="boolean"/>
+        <attr name="loadmore_enable" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomerRecyclerView">
+        <attr name="refresh_enable" format="boolean"/>
+        <attr name="loadmore_enable" format="boolean"/>
+    </declare-styleable>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray_btn_stroke</item>
+        <item name="colorControlActivated">@color/gray_btn_stroke</item>
+    </style>
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/app_color_gallery</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+</resources>

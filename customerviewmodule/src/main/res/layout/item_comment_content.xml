@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.shouchuanghui.commonmodule.view.GlideImageView
+            android:id="@+id/ivAvater"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            app:roundRadius="14dp"
+            app:roundType="roundall"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14.5dp"
+            android:layout_toRightOf="@id/ivAvater"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEEEEEE"
+        android:padding="8dp"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/text_dark"
+        android:textSize="15sp" />
+
+    <com.shouchuanghui.customerviewmodule.view.TagLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:horizontal_count="3"
+        app:horizontal_space="5dp"
+        android:layout_marginTop="8dp">
+
+    </com.shouchuanghui.customerviewmodule.view.TagLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvZan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvCreateDate"
+            android:layout_marginRight="58dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/thumb"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="点赞"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvToComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvZan"
+            android:drawableLeft="@mipmap/commit"
+            android:text="评论"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line_bg"
+        android:layout_marginTop="@dimen/text_gap_space"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

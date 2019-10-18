@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GlideImageView">
+        <attr name="roundType" format="enum" >
+            <enum name="roundtop" value="1"/>
+            <enum name="roundbottom" value="2"/>
+            <enum name="roundall" value="3"/>
+        </attr>
+        <attr name="roundRadius" format="dimension|float" />
+    </declare-styleable>
+
+    <declare-styleable name="RollViewPager">
+        <attr name="rollviewpager_hint_mode">
+            <enum name="point" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="rollviewpager_hint_gravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="rollviewpager_hint_paddingRight" format="dimension" />
+        <attr name="rollviewpager_hint_paddingLeft" format="dimension" />
+        <attr name="rollviewpager_hint_paddingTop" format="dimension" />
+        <attr name="rollviewpager_hint_paddingBottom" format="dimension" />
+
+        <attr name="rollviewpager_play_delay" format="integer" />
+        <attr name="rollviewpager_hint_color" format="color" />
+        <attr name="rollviewpager_hint_alpha" format="integer" />
+        <attr name="rollviewpager_hint_view_focuse" format="reference" />
+        <attr name="rollviewpager_hint_view_normal" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchEditText">
+        <attr name="drawable_del" format="reference" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TagLayout">
+        <!-- 显示行数 -->
+        <attr name="line_count" format="integer"/>
+        <!-- 子view之间的横向空间 -->
+        <attr name="horizontal_space" format="dimension"/>
+        <!-- 子view之间的纵向空间 -->
+        <attr name="vertical_space" format="dimension"/>
+        <!-- 一行显示几个子view(规则布局) -->
+        <attr name="horizontal_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TagView">
+        <attr name="selected_textcolor" format="color"/>
+        <attr name="unselected_textcolor" format="color"/>
+        <attr name="unselected_background" format="color|reference"/>
+        <attr name="selected_background" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="diameter" format="dimension"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="title_text_size" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="string_title" format="string"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+    </declare-styleable>
+</resources>

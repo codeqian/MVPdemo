@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/include_title_menu"/>
+    <ScrollView
+        android:layout_below="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="47dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/message_head"
+                layout="@layout/item_message_detail_head" />
+            <LinearLayout
+                android:id="@+id/llCommentTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/normal_space"
+                android:paddingRight="@dimen/normal_space"
+                android:paddingBottom="@dimen/gap_space">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部评论"
+                    android:textColor="@color/text_dark"
+                    android:textSize="17sp" />
+
+                <CheckBox
+                    android:id="@+id/cbLookBuilder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/selector_only_look_builder"
+                    android:button="@null"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5.5dp"
+                    android:paddingRight="5.5dp"
+                    android:paddingTop="2dp"
+                    android:text="只看楼主"
+                    android:textColor="@color/text_dark"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/cbHot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textColor="@color/text_gray"
+                    android:text="最热"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSort"
+                    android:text="倒序"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/arrow_down"
+                    android:layout_marginLeft="@dimen/normal_space"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <com.shouchuanghui.customerviewmodule.CustomerRecyclerView
+                android:id="@+id/crv"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+<!--    评论框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/commitBtn"
+            android:layout_width="195dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_shape_gray"
+            android:gravity="center_vertical"
+            android:hint="写评论..."
+            android:paddingLeft="16dp"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/zanBtn"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_space">
+
+            <ImageView
+                android:id="@+id/thumbIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/thumb" />
+
+            <TextView
+                android:text="0"
+                android:id="@+id/tvNumZan"
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_red_circle_number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/commentBackBtn"
+            android:layout_width="34dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_space">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/commit_c" />
+
+            <TextView
+                android:text="0"
+                android:id="@+id/tvNumComment"
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_red_circle_number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/shareBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_space"
+            android:src="@mipmap/share_c" />
+    </LinearLayout>
+
+    <com.shouchuanghui.customerviewmodule.CustomerRecyclerView
+        android:id="@+id/crvPage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:loadmore_enable="false"
+        app:refresh_enable="false"/>
+
+    <View
+        android:id="@+id/vBlackBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_black"
+        android:clickable="true"
+        android:visibility="gone" />
+</RelativeLayout>

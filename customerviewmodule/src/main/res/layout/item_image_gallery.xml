@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1.5dp">
+
+    <ImageView
+        android:id="@+id/sdv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="60dp"
+        android:minWidth="60dp" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@id/sdv"
+        android:layout_margin="3dp"
+        android:background="@mipmap/un_agree"
+        android:button="@null"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
+

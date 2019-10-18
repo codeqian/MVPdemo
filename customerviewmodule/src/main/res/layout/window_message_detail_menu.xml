@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvShield"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="屏蔽该用户所有帖子"
+            android:textColor="@color/text_black" />
+
+        <View android:id="@+id/vShield"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFCCCCCC"/>
+
+        <TextView
+            android:id="@+id/tvReport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/text_black" />
+
+        <View android:id="@+id/vReport"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFCCCCCC"/>
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/red" />
+
+        <View android:id="@+id/vDelete"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFCCCCCC"/>
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_black" />
+
+    </LinearLayout>
+</layout>

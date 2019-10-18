@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <com.nmssdmf.commonlib.view.GlideImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/remove"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"/>
+
+    </RelativeLayout>
+</layout>

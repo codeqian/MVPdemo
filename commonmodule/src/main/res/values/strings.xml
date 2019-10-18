@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CommonModule</string>
+    <string name="wait">请等待。。。</string>
+    <string name="yuan">￥</string>
+</resources>

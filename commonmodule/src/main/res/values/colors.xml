@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="light_red">#FF6251</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="app_color">#ffffff</color>
+    <color name="text_orange">#FFFF9A14</color>
+<!--    头部背景色-->
+    <color name="top_background_color">#fae631</color>
+    <!--统一的背景颜色-->
+    <color name="background_color">#efeff4</color>
+    <!-- 分割线颜色 -->
+    <color name="line_bg">#F6F6F6</color>
+<!--    透明黑色-->
+    <color name="trans_black">#99000000</color>
+    <color name="light_trans_black">#4D000000</color>
+
+    <color name="main_color">#FAE526</color>
+    <color name="light_black">#FF333333</color>
+    <color name="light_black2">#FF666666</color>
+    <color name="black_statusbar">#33000000</color>
+    <color name="text_gray">#B4BABF</color>
+    <color name="text_gray_dark">#6A7270</color>
+    <color name="text_grayHint">#91979C</color>
+    <color name="text_dark">#2D2E36</color>
+    <color name="text_black">#333333</color>
+    <color name="btn_yellow">#FFFF9A14</color>
+    <color name="btn_text_red">#FF5C4A</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="decimal_gallery">#2E3334</color>
+    <color name="accent_gallery">#01ceb0</color>
+    <color name="app_color_gallery">#01ceb0</color>
+
+    <color name="gray_btn">#E0DFE0</color>
+    <color name="gray_btn_stroke">#D9DFE6</color>
+</resources>
